@@ -1,0 +1,50 @@
+.IdWrapper {
+    max-width: 3000px;
+    margin: 0 auto;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr  1fr; */
+    align-items: center;
+    grid-gap: 16px;
+    padding: 0 10px;
+    margin-top: 5;
+    /* background: green; */
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 0 20px;
+    }
+  }
+  .Form.Label-settingsLabel {
+    font-size: 1em;
+    color: red;
+}
+  .cardDetails {
+      background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: left;
+        border-radius: 20px;
+        max-height: 400px;
+        max-width:500px;
+        padding: 0px;
+        margin-top:30px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        /* background: linear-gradient(90deg, rgb(233, 147, 18) 0%, rgb(26, 23, 23) 100%);; */
+      
+      
+        border: 2px dotted  rgb(244,117,34);;
+        &:focus {
+          outline: none;
+          border-color: red;
+        }
+  }
+  
+  @media print {
+    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+}
+  
+  
