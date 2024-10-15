@@ -41,7 +41,7 @@ export async function login(formData: FormData) {
 
   /* comment if  accessing the spf network (development)*/
  if (!res.data.success) {
-   return { error: "Wrong Credentials!!!!!  Username should be (name.surname)  . Password is the one you log  in on you computer  " };
+   return { error: "Wrong !!!!!  Username should be (name.surname)  . Password is the one you log  in on you computer  " };
  }
   cookies().set("bam session", session, { expires, httpOnly: true });
   
